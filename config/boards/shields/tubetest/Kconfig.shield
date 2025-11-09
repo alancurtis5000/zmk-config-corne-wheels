@@ -1,0 +1,3 @@
+# No whitespace after the comma or in your part name!
+config SHIELD_TUBETEST
+    def_bool $(shields_list_contains, TubeTest)

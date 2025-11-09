@@ -1,0 +1,17 @@
+if SHIELD_CORNEWHEEL_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_CORNEWHEEL
+    default "Corne Wheel"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_CORNEWHEEL_LEFT || SHIELD_CORNEWHEEL_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
